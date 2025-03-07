@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大帅比的网站</title>
+    <!-- 引入 Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- 引入 Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- 引入 AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- 引入 particles.js -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- 添加粒子容器 -->
+    <div id="particles-js"></div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Y M</div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="#about">关于</a></li>
+                <li><a href="#ai-assistant">AI助手</a></li>
+                <li><a href="#portfolio-section">作品</a></li>
+                <li><a href="#mita">米塔</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-image" data-aos="fade-down">
+                <img src="imgs/mmexport1740497672874.jpeg" alt="个人照片">
+            </div>
+            <h1 data-aos="fade-up">欢迎来到大帅比的网站</h1>
+            <p data-aos="fade-up" data-aos-delay="200">Web开发者 设计师 创作者</p>
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="profile-card" data-aos="fade-up">
+                <div class="profile-info">
+                    <h2>关于我</h2>
+                    <p>这里是Web开发者 × 创作者 × 动漫星人的奇妙结界！</p>
+                    <p>如果你也沉迷于：</p>
+                    <p>🔥 键盘与热咖啡——写代码到凌晨的「燃烧感」，</p>
+                    <p>🎨 像素与分镜——设计界面时脑补的「番剧OP分镜」，</p>
+                    <p>💡 **“这个功能，如果能像动漫那样炫酷就好了*”**的执念……</p>
+                    <p>恭喜你，找到组织了！</p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="ai-assistant" data-aos="fade-up" id="ai-assistant">
+                <h2>AI助手</h2>
+                <p>体验智能对话，获得个性化帮助，AI助手随时为您服务，解答问题，提供建议。</p>
+                <button class="ai-button">
+                    <i class="fas fa-robot"></i>
+                    开启AI之旅
+                </button>
+            </div>
+
+            <div id="portfolio-section">
+                <h2>作品展示</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-main-image">
+                        <img src="imgs/image1.jpg" alt="主要作品图片">
+                    </div>
+                    <div class="portfolio-grid-2x2">
+                        <div class="grid-item">
+                            <img src="imgs\蓝色眼睛女子-尾巴-女孩子-猫耳-.png" alt="作品图片1">
+                        </div>
+                        <div class="grid-item">
+                            <img src="imgs/34832ffcb91a7ab826f60c57bbc8767.jpg" alt="作品图片2">
+                        </div>
+                        <div class="grid-item">
+                            <img src="imgs/_20240530191001_upscayl_4x_ultrasharp.png" alt="作品图片3">
+                        </div>
+                        <div class="grid-item">
+                            <img src="imgs/2023-09-15 022305(5).jpg" alt="作品图片4">
+                        </div>
+                    </div>
+                    <div class="effect-comparison">
+                        <div class="effect-text">
+                            <br> </br>
+                            <br> </br>
+                            <br> </br>
+                            <br> </br>
+                            <h3>绯月流辉</h3>
+                            <p class="photo-info">「There are two things in life that won't wait for you: meeting and parting. So, say goodbye.」</p>
+                        </div>
+                        <div class="effect-images">
+                            <div class="before-image">
+                                <img src="imgs\117582058_p0_master1200_upscayl_4x_realesrgan-x4plus-anime (2)_upscayl_1x_realesrgan-x4plus-anime.png" alt="效果对比前">
+                            </div>
+                            <div class="after-image">
+                                <img src="imgs/MJ_20240509_195237.png" alt="效果对比后">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 添加视频区域 -->
+            <div class="video-section" data-aos="fade-up" id="mita">
+                <h2 class="video-title">是你喜欢的米塔嘛</h2>
+                <div class="video-container">
+                    <video id="myVideo" src="imgs/mmexport1740583363743.mp4">
+                        您的浏览器不支持 HTML5 视频
+                    </video>
+                    <button id="playButton" class="play-button">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="decoration-emoji"></div>
+            </div>
+        </div>
+    </section>
+
+    <button id="back-to-top" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- 引入 AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+<div class="ai-modal modal" id="aiModal">
+    <div class="modal-content">
+        <button class="close-modal" id="closeModal">&times;</button>
+        <h2>选择您的AI助手</h2>
+        <div class="ai-grid">
+            <a href="https://deepseek.com" class="ai-card" target="_blank">
+                <div class="ai-icon">
+                    <img src="tubioa/OIP.jpg" alt="DeepSeek">
+                </div>
+                <div class="ai-name">DeepSeek</div>
+            </a>
+            <a href="https://kimi.moonshot.cn" class="ai-card" target="_blank">
+                <div class="ai-icon">
+                    <img src="tubioa/OIP (1).jpg" alt="Kimi">
+                </div>
+                <div class="ai-name">Kimi</div>
+            </a>
+            <a href="https://chatglm.cn" class="ai-card" target="_blank">
+                <div class="ai-icon">
+                    <img src="tubioa/OIP (2).jpg" alt="智普清言">
+                </div>
+                <div class="ai-name">智普清言</div>
+            </a>
+            <a href="https://jimeng.jianying.com/ai-tool/home" class="ai-card" target="_blank">
+                <div class="ai-icon">
+                    <img src="tubioa/OIP (3).jpg" alt="即梦AI">
+                </div>
+                <div class="ai-name">即梦AI</div>
+            </a>
+            <a href="https://chat.openai.com" class="ai-card" target="_blank">
+                <div class="ai-icon">
+                    <img src="tubioa/OIP (4).jpg" alt="OpenAI">
+                </div>
+                <div class="ai-name">OpenAI</div>
+            </a>
+        </div>
+    </div>
+</div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info" id="contact">
+                    <h3>关于网站</h3>
+                    <p>这是一个展示个人作品和创意的空间</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> 邮箱：buxiangfeng45@gmail.com</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 地址：中国-广东省东莞市厚街镇</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#about">关于</a></li>
+                        <li><a href="#ai-assistant">AI助手</a></li>
+                        <li><a href="#portfolio-section">作品</a></li>
+                        <li><a href="#mita">米塔</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 YM. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
