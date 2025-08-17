@@ -45,7 +45,28 @@ backToTop.addEventListener('click', () => {
 });
 
 // 作品展示数据
-const portfolioItems = [];
+const portfolioItems = [
+    {
+        title: '作品 1',
+        image: 'imgs/image1.jpg',
+        description: '作品描述'
+    },
+    {
+        title: '作品 2',
+        image: 'imgs/117582058_p0_master1200_upscayl_4x_realesrgan-x4plus-anime (2)_upscayl_1x_realesrgan-x4plus-anime.png',
+        description: '作品描述'
+    },
+    {
+        title: '作品 4',
+        image: 'imgs/_20240530191001_upscayl_4x_ultrasharp.png',
+        description: '作品描述'
+    },
+    {
+        title: '作品 3',
+        image: 'imgs/34832ffcb91a7ab826f60c57bbc8767.jpg',
+        description: '作品描述'
+    }
+];
 
 // 动态加载作品展示
 function loadPortfolio() {
